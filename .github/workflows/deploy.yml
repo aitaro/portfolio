@@ -39,6 +39,8 @@ jobs:
     - name: install
       run: yarn
       working-directory: ./app
+      env:
+        NODE_ENV: development
 
     - name: build
       run: yarn build
